@@ -16,7 +16,7 @@ Prompt: Amaga la segona columna. Resultat: dgvComarques.Columns[1].Visible = fal
 
 Prompt: Guarda les dades de la cel·la al clicar-la. Resultat: 
 
-DataGridViewRow row = dgvComarques.Rows[n];
+DataGridViewRow row = dgvComarques.Rows[n]; \n /n
 string nomComarca = row.Cells[2].Value.ToString();
 int poblacio = Convert.ToInt32(row.Cells[3].Value);
 double consumCapita = Convert.ToDouble(row.Cells[7].Value);
