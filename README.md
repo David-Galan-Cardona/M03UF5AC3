@@ -25,9 +25,4 @@ int poblacio = Convert.ToInt32(row.Cells[3].Value);
 double consumCapita = Convert.ToDouble(row.Cells[7].Value);"
 
 Prompt: Comprova que no sigui un nombre. Resultat: 
-if (!int.TryParse(txtTotal.Text, out int result))
-            {
-                e.Cancel = true;
-                txtTotal.Focus();
-                errTotal.SetError(txtTotal, "El camp total ha de ser un número");
-            }
+if (!int.TryParse(txtTotal.Text, out int result)) { e.Cancel = true; errTotal.SetError(txtTotal, "El camp total ha de ser un número"); }
